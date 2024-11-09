@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Registration Form</title>
+</head>
+<body>
+    <h2>Dance Registration Form</h2>
+    <form action="/submit-registration" method="post">
+        <!-- Participant Name -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Age -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required min="1"><br><br>
+
+        <!-- Gender -->
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+        </select><br><br>
+
+        <!-- Contact Information -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Dance Style -->
+        <label for="style">Preferred Dance Style:</label>
+        <select id="style" name="style" required>
+            <option value="ballet">Ballet</option>
+            <option value="hiphop">Hip Hop</option>
+            <option value="salsa">Salsa</option>
+            <option value="jazz">Jazz</option>
+            <option value="contemporary">Contemporary</option>
+        </select><br><br>
+
+        <!-- Additional Message -->
+        <label for="message">Additional Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Any special requests or additional information"></textarea><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
