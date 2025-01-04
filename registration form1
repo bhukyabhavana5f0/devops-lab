@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Registration Form</title>
+</head>
+<body>
+    <h2>Dance Registration Form</h2>
+    <form action="/submit" method="POST">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required><br><br>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="123-456-7890" required><br><br>
+
+        <label for="dance_style">Dance Style:</label>
+        <select id="dance_style" name="dance_style" required>
+            <option value="ballet">Ballet</option>
+            <option value="hiphop">Hip-hop</option>
+            <option value="contemporary">Contemporary</option>
+            <option value="salsa">Salsa</option>
+            <option value="jazz">Jazz</option>
+            <option value="tap">Tap</option>
+        </select><br><br>
+
+        <label for="experience_level">Experience Level:</label><br>
+        <input type="radio" id="beginner" name="experience_level" value="beginner" required>
+        <label for="beginner">Beginner</label>
+        <input type="radio" id="intermediate" name="experience_level" value="intermediate">
+        <label for="intermediate">Intermediate</label>
+        <input type="radio" id="advanced" name="experience_level" value="advanced">
+        <label for="advanced">Advanced</label><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="5" required><br><br>
+
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
